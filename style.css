@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Блок My skills */
+.skills {
+    padding: 100px 0;
+}
+.skills-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.skills-info {
+width: 40%;
+}
+.skills-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.skill{
+    margin-bottom: 30px;
+}
+.skill-name {
+    color: #727272;
+    margin-bottom: 20px;
+}
+.skill-scale {
+    height: 5px;
+    background: #c4c4c4c4;
+}
+.skill-scale-internal{
+    width: 80%;
+    height: 5px;
+    background: #34547A;
+}
+.skill-image {
+    width: 50%;object-fit: cover;
+}
+
+
+/*Блок process*/
+
+.process {
+background: #EEEFF1;
+padding: 100px 0;
+}
+.process-title {
+    font-size: 32px;
+    text-align: center;
+}
+.process-descr {
+    width: 30%;
+    text-align: center;
+    color: #727272;
+    margin: 50px auto 60px;
+
+}
+.process-video {
+    width: 60%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: auto;
+}
+/* Блок projects*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: cover; /* cover - полная ширина, высота автоматически, contain - полная высота, ширина обрезается*/
+}
+
+.sticker {
+    background-image: url(./image/stiker.png); 
+}
+
+.laptop {
+    background-image: url(./image/laptop.png);
+}
+.projects-item-hover {
+    height: 100%; /*на всю висоту projects-item*/
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(103, 124, 150, 0.8));
+    opacity: 0; /*свойство прозрачности, чем ближу к 0 - то более прозразній, */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.projects-item-hover:hover {
+    opacity: 1;
+}
+
+/* Блок Microsoft*/
+.microsoft {
+padding: 70px 0 110px;
+}
+
+.microsoft-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+.microsoft-wrapper img {
+    width: calc(25% - 30px);
+    margin-right: 30px ;
+}
+/*Forma*/
+
+.form {
+    background: aliceblue;
+    padding: 100px 0;
+}
+.form-title {
+font-size: 32px;
+text-align: center;
+
+}
+.form-descr {
+    font-size: 16px;
+    width: 28%;
+    text-align: center;  
+    margin: 50px auto 65px;
+}
+
+form {
+    width: 30%;
+    margin: auto;
+}
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.form-control {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 45%;
+    padding: 17px;
+    border: none; 
+    outline: none;
+}
+input[type="submit"]  {
+    display: block;
+    margin: auto;
+    height: 50px;
+    background: #34547A;
+    border: none; 
+    outline: none;
+    padding: 0 45px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*1. Создали контейнер, внутрь которого фоном добавили картинку (стикер или лептоп)
+2. Внутрь контейнера поместили еще один блок (div-hover), который сделали прозрачным
+3. При наведении делаем блок (div-hover) непрозрачным
+4. Внутрь блока (div-hover) добавили картинку*/
