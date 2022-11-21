@@ -5,14 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Form</title>
 </head>
 
 <body>
+
+    <!-- Блок First screen -->
+    <header>
+        <div class="nav-wrapper">
+            <p class="logo">WD</p>
+            <nav>
+                <a href="#">Головна</a>
+                <a href="#">Про автора</a>
+                <a href="#">Роботи</a>
+                <a href="#">Процес</a>
+                <a href="#">Контакти</a>
+    
+            </nav>
+        </div>
+    </header>
+    
+    <section class="first-screen">
+        
+
+        <div class="design-wrapper">
+            <div class="img-wrapper">
+                <img class="frame" src="./image/Frame.png" alt="">
+            </div>
+            
+            <div class="content-wrapper">
+                <h1 class="first-screen-title">Дизайн та верстка</h1>
+                <p class="first-screen-descr">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum illum neque odit rerum beatae.
+                </p>
+               
+                <input   type="submit" value="НАПИСАТИ МЕНІ">
+            </div>
+           
+        </div>
+        
+        
+        
+    </section>
+
+    <!-- Блок About me -->
+
+    <section class="about-me">
+        <h3 class="about-title">Про мене</h3>
+        <p class="about-discr">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis incidunt vel ea deserunt, nemo ipsum eligendi magnam eius delectus omnis! Accusamus illo atque molestias delectus in inventore maiores quidem qui!
+        </p>
+
+    </section>
+
+    <!-- Блок Numbers icon -->
+
+    <section class="numbers-icon">
+        <div class="numbers-icon-wrapper">
+            <img src="./image/numbers__item.png" alt="">   
+            <img src="./image/numbers__item.png" alt="">   
+            <img src="./image/numbers__item.png" alt="">   
+            <img src="./image/numbers__item.png" alt="">   
+            <img src="./image/numbers__item.png" alt="">   
+            <img src="./image/numbers__item.png" alt="">             
+
+        </div>
+
+    </section>   
+
+
     <!-- Блок My skills -->
     
-<section class="skills">
+    <section class="skills">
     <div class="skills-wrapper">
         <div class="skills-info">
            <h3 class="skills-title">Мої навички</h3>
@@ -41,17 +109,16 @@
 
     </div>
     
-</section>
+    </section>
 
     <!-- Процесс -->
 
     <section class="process">
         <h3 class="process-title">Як я працюю</h3>
         <p class="process-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ea aperiam deleniti illo mollitia accusantium iusto optio nulla perferendis magni.</p>
-        <iframe class="process-video"
-        src="https://www.youtube.com/embed/oMN7sq1t1kA" 
-        title="YouTube video player" 
-        frameborder="0" 
+        <iframe class="process-video" width="560" height="315" 
+        src="https://www.youtube.com/embed/sl3zHjEivys" 
+        title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
     </section>
@@ -135,7 +202,7 @@
                 <input type="email" placeholder="Ваш email">
                 </div>                
                 <textarea name="submit" id=""  rows="10" placeholder="Повідомлення"></textarea>
-                <input type="submit" value="Надіслати відгук">
+                <input class="btn-form" type="submit" value="Надіслати відгук">
 
             </form>
 
